@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Methodology — Tape Truth</title>
+<meta name="description" content="How we measure manufactured buy pressure and transaction contest on Solana memecoins: per-transaction reserve-delta reconciliation, failed-transaction capture, and the base rates nobody publishes.">
+<style>
+ body{background:#0b0e14;color:#d7dce2;font:15.5px/1.65 -apple-system,Segoe UI,Roboto,sans-serif;margin:0;padding:0 16px 60px}
+ .wrap{max-width:800px;margin:0 auto}
+ h1{font-size:26px;margin:36px 0 8px} h2{font-size:20px;margin:34px 0 8px;color:#fff}
+ h3{font-size:16px;margin:24px 0 6px;color:#fff}
+ a{color:#58a6ff;text-decoration:none} a:hover{text-decoration:underline}
+ .big{background:#121826;border:1px solid #263050;border-radius:10px;padding:16px 20px;margin:18px 0}
+ .big b{color:#ff6b6b;font-size:22px}
+ code{background:#161b26;padding:1px 5px;border-radius:4px;font-size:13.5px}
+ .note{color:#8b949e;font-size:13px}
+ ul{padding-left:22px}
+ .foot{color:#8b949e;font-size:12.5px;margin-top:34px;border-top:1px solid #1c2230;padding-top:14px}
+</style></head><body><div class="wrap">
+<p><a href="index.html">← back to the live scoreboard</a></p>
+<h1>The Solana memecoin tape is lying to you. Here's by how much.</h1>
+<p class="note">Published 2026-08-06. All numbers below were measured on our own full-firehose index of Solana DEX activity (5.5B trade rows, Dec 2025 – Apr 2026, plus live capture since) and are reproducible from public chain state — every claim links to a verification recipe.</p>
+
+<div class="big">
+<p>Three numbers we measured that nobody publishes:</p>
+<ul>
+<li><b>+28.4%</b> — median inflation of apparent buy-side SOL flow vs what actually entered the pool, on momentum-signal windows (P90: +50.5%). 78.9% of such windows are &gt;15% inflated.</li>
+<li><b>97.8%</b> — share of multi-instruction all-buy Pump.fun bundle transactions (99.97% SOL-weighted) that move the pool by only ~ONE instruction's worth: deliberate buy-pressure spoofing.</li>
+<li><b>1.19%</b> — fraction of observed Pump.fun buy <i>intents</i> that land successfully during contested launches (63.5% land as failures, 35.3% never land). The visible tape is ~1% of attempted demand.</li>
+</ul>
+</div>
+
+<h2 id="spoof">Board A: manufactured buy pressure</h2>
+<h3>The problem</h3>
+<p>Every dashboard, terminal and trading bot displays "buy volume" computed from per-instruction data — because that is what indexers emit. Spoofers exploit exactly this: a single transaction carrying N buy instructions from N different wallets shows up as N buys totalling N× the SOL, while the bonding curve moves by roughly <i>one</i> instruction's worth. The fake flow is engineered to appear precisely where momentum traders and bots look: on our measured data, spoofed transactions are ~6× enriched inside buy-dominance signal windows vs the 3.2% base rate across all Pump.fun buy flow.</p>
+<h3>The method</h3>
+<p>Per-transaction reserve-delta reconciliation. For each transaction touching a token's curve: group its trade instructions, sum the claimed buy SOL, and compare against the actual change in the pool's <code>real_sol_reserves</code> — public chain state. Real flow per transaction = the reserve delta; anything claimed above that is manufactured. No wallet clustering, no heuristics, no ML: it is arithmetic on public state. Our implementation was certified against an adversarial parity harness: <b>0.000% median error</b> vs reserve-delta ground truth on the windows where spoofing concentrates.</p>
+<h3>Verify it yourself</h3>
+<p>Take any "sample proof tx" from the scoreboard. On any explorer: (1) count the buy instructions and sum their SOL amounts; (2) read the bonding-curve account's SOL reserves immediately before and after the transaction; (3) subtract. The claimed flow will exceed the reserve move — that difference is the spoof. Anyone with an RPC node or a Dune account can recompute the entire board.</p>
+<p class="note">Honest caveats: (a) a high manufactured-% is not proof of wrongdoing by the token team — any third party can bundle-spoof a token; (b) wash trading (offsetting buy+sell inside a window) also lowers reserve-verified flow and is counted as manufactured — that is intentional, since it is equally fake demand; (c) the board covers Pump.fun bonding-curve tokens; post-graduation AMM legs are out of scope for the free board.</p>
+
+<h2 id="contest">Board B: contest &amp; landing telemetry</h2>
+<h3>The problem</h3>
+<p>Trade feeds only show transactions that <i>succeeded</i>. During a contested launch the overwhelming majority of buy attempts fail or never land — we measured only <b>1.19%</b> of observed buy intents landing successfully (via a decoded-shred pre-landing capture, 493M intents over 13.2 days, cross-checked against a 503.8M-row failed-transaction archive). What that means for you: in a contested token your market order lands late and fills wide. We measured it live: stop-loss orders set at −30% filled at <b>−39.6% mean</b> — roughly 10 points of pure contest slippage — and 7.2% of sell attempts failed outright (measured over 17k+ live sells).</p>
+<h3>The method</h3>
+<p>We index <i>failed</i> Pump.fun transactions — the ones every trade feed drops — and compute per-token, per-30-min: failed-buy count, unique wallets, fee burn, and the attempt-landing rate. The slippage bands on the board are anchored on the live fill measurements above. Failed transactions are public chain data; every row links a sample failed tx you can open on any explorer.</p>
+<p class="note">Honest caveat: contest telemetry is an <i>execution-quality</i> signal, not an entry signal. We tested the entry-signal version to destruction (dozens of gated variants across 9 populations) — it does not pick winners. It tells you how badly you will get filled, what tip to pay, and when not to send. That claim we can defend.</p>
+
+<h2 id="license">API access &amp; licensing</h2>
+<p>The scoreboard is the free, hourly, top-20 version. The underlying feeds are:</p>
+<ul>
+<li><b>Buy-Pressure Authenticity Score</b> — per-token score in [0,1] (reserve-verified real-flow fraction, rolling window) + per-tx spoof flag stream. Computable same-transaction (~100&nbsp;ms class); servable sub-second.</li>
+<li><b>Token-Level Congestion &amp; Landing Telemetry</b> — per-token failed-tx pressure, slot concentration, contest score / predicted fill difficulty at 1&nbsp;s cadence.</li>
+</ul>
+<p><a href="index.html#waitlist">Join the waitlist</a> (free) or take a <a href="index.html#waitlist">founding-user pre-order at $99/mo</a> — no payment today, first invoice only when your feed is live. Terminals, bots and token-safety APIs: the spoof sub-score is available under license as a badge/sub-score — <a href="https://github.com/GodOfCrypto69/solana-tape-truth/issues/new?title=Licensing%20inquiry">open a licensing inquiry</a>.</p>
+
+<div class="foot">
+Measurement provenance: 5.53B-row DEX trade archive (Dec 20 2025 – Apr 29 2026) + live v2 indexer (Jul 2026–), 503.8M failed memecoin txs, 493M pre-landing intents (13.2 days), 17k+ live sells. Spoof-rate and inflation numbers: Feb–Apr 2026 Pump.fun data; landing rate: Jul 2026 capture; fill measurements: Jul 2026 live. Not financial advice.
+</div>
+</div></body></html>
