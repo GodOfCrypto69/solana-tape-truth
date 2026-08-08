@@ -1,228 +1,241 @@
 {
- "generated_utc": "2026-08-08 02:07",
+ "generated_utc": "2026-08-08 03:07",
  "spoof_window_min": 60,
  "contest_window_min": 30,
- "top_spoofed": [],
+ "top_spoofed": [
+  {
+   "mint": "3qGoQBbhgkt6D5AG6emeGiK2zgTPZudGgbcKNnFUpump",
+   "symbol": "",
+   "apparent_buy_sol": 6.86,
+   "real_buy_sol": 74.43,
+   "manufactured_pct": 0.0,
+   "spoof_txs": 1,
+   "n_txs": 12,
+   "proof_sig": "3XNx94CNb8dHuNQ7FJ8nAZYF9y4etxmhuB1GPLRpgXyXiaMuYsF6SLnAjE617VAWfvVCUDZXpRMmVR2KZWaJJciw",
+   "proof_apparent_sol": 3.636,
+   "proof_real_sol": 0.0
+  }
+ ],
  "most_contested": [
   {
-   "mint": "8jFeZFGrh557A8FZZXAzCVRbtrH7Fw8r8YoXAnKupump",
-   "symbol": "",
-   "failed_buys_30m": 174,
+   "mint": "5PQDQtZ2jnjXmFzkhQuDZ377ziHENXKZTJcbzeyGQueW",
+   "symbol": "BBN2",
+   "failed_buys_30m": 403,
    "landed_buys_30m": 0,
    "landing_rate_pct": 0.0,
-   "fee_burn_sol": 0.001,
-   "uniq_wallets": 6,
+   "fee_burn_sol": 0.025,
+   "uniq_wallets": 11,
    "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "21GTQn1gxjXhmA92ZNLrx7mv2S38FFf6jNEfWo6xGK3rHjZuGYtYGV3u2cDETtkC3dUArYotXDDqQy9E9FR3H43E"
+   "proof_sig": "2DJ98sq2Cdmq6e2wpLBLUqS8ta9rq1zDw4qvdio4iWCfJS6x1J2HxYj3JfrjRSNRescq8iBdDSXM3b4txQ4HCTa9"
   },
   {
-   "mint": "EZffrVZr2iJrAskZLLbxUQZF8Z8s9fFKW481R1VDpump",
-   "symbol": "",
-   "failed_buys_30m": 159,
-   "landed_buys_30m": 3,
-   "landing_rate_pct": 1.9,
-   "fee_burn_sol": 0.001,
-   "uniq_wallets": 8,
+   "mint": "G2SG1BLKyDExF6HApzqGht81U76rJo1njDj6eJHqV6yo",
+   "symbol": "KING",
+   "failed_buys_30m": 402,
+   "landed_buys_30m": 0,
+   "landing_rate_pct": 0.0,
+   "fee_burn_sol": 0.005,
+   "uniq_wallets": 7,
    "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "1UdWcwmcZeyqRoiVwspbg7e8Dc9SEzKiuWhjFoyi9A3TTpsgKC58RupGUevp5iic8pzTRhGDNwgSznKR14gLZFN"
+   "proof_sig": "28ba7GYofKWwvx3yLFXWxHvefa1PbQ512zSkHmuHymGaPFjehM1GBLcuYwmvUp2guBseLdMmMvnnXGW8p98bWmUk"
   },
   {
    "mint": "7yoDgyGmu6eoZGGH8129swEH2vSi2ENXRxEM4uucpump",
    "symbol": "",
-   "failed_buys_30m": 149,
-   "landed_buys_30m": 0,
-   "landing_rate_pct": 0.0,
-   "fee_burn_sol": 0.002,
+   "failed_buys_30m": 329,
+   "landed_buys_30m": 2,
+   "landing_rate_pct": 0.6,
+   "fee_burn_sol": 0.003,
    "uniq_wallets": 8,
    "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "2aNa293XPuqt3CqRNHwqRoTimsjm72i8u8Q7ifn19KFVoF9Zzhpbb91PKryq6ky6Xw8z6BLXjFQC3SCxTTKqKk7J"
+   "proof_sig": "21DCaQJKqUa5wQ2iZjxg8646597qFsAqrTkegQgaqUdifp35gsQBqRY7mv3aE1R75BnSezyWg3tWDwSySZEjv26y"
   },
   {
-   "mint": "J7yomB11QW26JwSa536pctHdCburq5kCjGjzzkxspump",
+   "mint": "BbQtR9cAq7h4b5gbAZjwJYqDeDWBarWxYCXf9zKdQi27",
    "symbol": "",
-   "failed_buys_30m": 146,
+   "failed_buys_30m": 318,
+   "landed_buys_30m": 1,
+   "landing_rate_pct": 0.3,
+   "fee_burn_sol": 0.004,
+   "uniq_wallets": 12,
+   "slippage_band": "severe (est. 8\u201315pp)",
+   "proof_sig": "21QW2c1DgiR8PrXvijcyJKvEEm9EAuKvUek37BW8qos3EFwMu9gxixns4EWDzv4HtSmwxE86guW7aL84ob2YdUGn"
+  },
+  {
+   "mint": "G8ShwCkRVCbuU14Una7azU8RY9pVoC53wDyFjpMRpump",
+   "symbol": "bigdeal",
+   "failed_buys_30m": 316,
+   "landed_buys_30m": 0,
+   "landing_rate_pct": 0.0,
+   "fee_burn_sol": 0.006,
+   "uniq_wallets": 8,
+   "slippage_band": "severe (est. 8\u201315pp)",
+   "proof_sig": "27y4QKWcCM1eE8Jam7FV559SjfW11kQujjKC1Zuw5U96Mf5quJMohGDQ2CPZ16mRXsrqSJ9WF9cJythfxjN7ut23"
+  },
+  {
+   "mint": "6uDL3ksEDaWkPx6Myt4u3qYaDYCRVyV9qkahNa4epump",
+   "symbol": "holdercat",
+   "failed_buys_30m": 296,
    "landed_buys_30m": 0,
    "landing_rate_pct": 0.0,
    "fee_burn_sol": 0.002,
    "uniq_wallets": 4,
    "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "22kXYynn5zv57RAmL7NntFkw4vHpp6iLPxosjVKnWv5viQKW6ChhB82FceC7z8K9nUoMcmUuPoW1c1t5wCkqhUnm"
+   "proof_sig": "2BQUCbqY85Sr5GX9yhaA1xQsCe4iGBvgkLou9vnWZf2FgkH6hKfWu4sTZJcyZJAdfzYNzyZipQDEUAKd1RVb5yz3"
   },
   {
-   "mint": "43UynqrgJNHKMuaWtPyNpt9GK8Z8YbTNqK4pbD1FRd5h",
+   "mint": "53ZpBwRa8HcGRWvvK7RGqjzUmc3fwxs2RbGYooABpump",
+   "symbol": "WAGBO",
+   "failed_buys_30m": 286,
+   "landed_buys_30m": 0,
+   "landing_rate_pct": 0.0,
+   "fee_burn_sol": 0.003,
+   "uniq_wallets": 7,
+   "slippage_band": "severe (est. 8\u201315pp)",
+   "proof_sig": "1Rhm6nw68vBJp8nACnUPtHF4KZVhEgT9xTZHdTgpQgsW9RaQ2jtuQNCty7NxxUo3TjBEKumLuYcTbocvnKnvVgo"
+  },
+  {
+   "mint": "8Lu8erxCmTAMc8jYeQiZyx3ZDKXGNWWWjxKoJXaapump",
    "symbol": "",
-   "failed_buys_30m": 143,
+   "failed_buys_30m": 280,
+   "landed_buys_30m": 1,
+   "landing_rate_pct": 0.4,
+   "fee_burn_sol": 0.003,
+   "uniq_wallets": 5,
+   "slippage_band": "severe (est. 8\u201315pp)",
+   "proof_sig": "22UfUqELd5pDK1B4LwrYDGADfcQ42RFwQhWhvG4kMJ1LPSnggHgiQ9XyLQSKiGo1VyqyBsDSv638PBJdZddBedvJ"
+  },
+  {
+   "mint": "8jFeZFGrh557A8FZZXAzCVRbtrH7Fw8r8YoXAnKupump",
+   "symbol": "",
+   "failed_buys_30m": 257,
+   "landed_buys_30m": 0,
+   "landing_rate_pct": 0.0,
+   "fee_burn_sol": 0.004,
+   "uniq_wallets": 6,
+   "slippage_band": "severe (est. 8\u201315pp)",
+   "proof_sig": "2HgmAePNuE5KcNrK7GErAsvtUXmQbFyaqZnLh5gsRMqTqQcRdZS8kr1ZiXkMy1ywpXmzy7JYA9dyc9BBCv8iZ21p"
+  },
+  {
+   "mint": "EZffrVZr2iJrAskZLLbxUQZF8Z8s9fFKW481R1VDpump",
+   "symbol": "",
+   "failed_buys_30m": 250,
+   "landed_buys_30m": 1,
+   "landing_rate_pct": 0.4,
+   "fee_burn_sol": 0.002,
+   "uniq_wallets": 8,
+   "slippage_band": "severe (est. 8\u201315pp)",
+   "proof_sig": "2NnJvznYstvAbSCWN9hmraT9r88kcwAES3gpBu39CqpaQ7idbBECZvhpTLj3GSWZ45UyfAyDZitqWBQEq8AbroVG"
+  },
+  {
+   "mint": "7tiH2pfyKwF1wepamfFrf4n8gF2GErx7juv6nx9Dpump",
+   "symbol": "Gilt",
+   "failed_buys_30m": 241,
    "landed_buys_30m": 0,
    "landing_rate_pct": 0.0,
    "fee_burn_sol": 0.002,
-   "uniq_wallets": 7,
+   "uniq_wallets": 5,
    "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "edDTZxUEeXuWohEPVqjoiaAPWqnHocEYnt6eKwonNDY7VHCo8S7f5NgYoQH2MDDGH3k1BaE82hbaihoq6m91fGD"
+   "proof_sig": "22gHLgwabshjRtQGuTMNqc7toRAMHkREBieBYNN3eFYU3CKKvgBS5sAFUkWA1fWgEcu3iV9DgzqLF4iKjWyTpxvC"
   },
   {
-   "mint": "HME1kr125R3eCDbQeLMHsxvBu6xdPhuzVyjdZUmvpump",
+   "mint": "J7yomB11QW26JwSa536pctHdCburq5kCjGjzzkxspump",
    "symbol": "",
-   "failed_buys_30m": 130,
+   "failed_buys_30m": 240,
+   "landed_buys_30m": 1,
+   "landing_rate_pct": 0.4,
+   "fee_burn_sol": 0.002,
+   "uniq_wallets": 4,
+   "slippage_band": "severe (est. 8\u201315pp)",
+   "proof_sig": "285kSftvX2CXFLQPp6xgkUQSzALMkkjvj3cyva658hHXr4q6hQZx4JXfHQmAbHkhyHaxjv7AzLpE34Mb7LvhW7w9"
+  },
+  {
+   "mint": "3N34AhErgkM7J7AQv7ut4aruBA7ZWJYRzFcpAtijpump",
+   "symbol": "MCEPE",
+   "failed_buys_30m": 234,
    "landed_buys_30m": 0,
    "landing_rate_pct": 0.0,
    "fee_burn_sol": 0.003,
    "uniq_wallets": 6,
    "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "24X5s7fBYjAz8TBPmjGBv26TvwXEeQYquTp7WJgsQNqMVN31xcssbNKTLoWDaGZUHJXgYvCKJndXkTopw9Dy62zr"
+   "proof_sig": "1eprfY1nEPmDSnPXK15JzC3ZVYZXtFLVRRTp2rAKcZ31rVt7U8uDRrZ9SVpeTKPKasBagbKKunEnA5wD3ZJtvTh"
   },
   {
-   "mint": "8Lu8erxCmTAMc8jYeQiZyx3ZDKXGNWWWjxKoJXaapump",
+   "mint": "3BiVJgHC7yFtbix8S2qkSyNc5YwhSvjySPUpKF69pump",
    "symbol": "",
-   "failed_buys_30m": 124,
-   "landed_buys_30m": 4,
-   "landing_rate_pct": 3.1,
-   "fee_burn_sol": 0.001,
-   "uniq_wallets": 6,
-   "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "22xN1qTNMsytcixGwnDv31MG8A4X24VgpjsrhRoWRiQBLGUtkrPuTeGPsSaggGNmEQWTsAqBpUHbcYEmnHcNLuJu"
-  },
-  {
-   "mint": "CW6FrNL5qnivmz7p95FyY8z6wypo8tPtRPTRNwhU5faf",
-   "symbol": "ALLEGRA",
-   "failed_buys_30m": 123,
+   "failed_buys_30m": 229,
    "landed_buys_30m": 0,
    "landing_rate_pct": 0.0,
-   "fee_burn_sol": 0.001,
+   "fee_burn_sol": 0.003,
    "uniq_wallets": 6,
    "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "21ZQCV3dyMBYehhvDBiBuJVjsZDAj5sZxN9NQHQZkyaZUD2VmTKP8xjBzXmXPc9rvqTSqGURMJpP8ZUZepLsuKhK"
+   "proof_sig": "22f23YneZBoS53gEdZkKur3cF1bZzgLemt4CZEfwhjzkgTbFt2JqoSrjnGEMZ1rATTyHhnFjCP3g4uiRKdTyAqcp"
   },
   {
-   "mint": "5PQDQtZ2jnjXmFzkhQuDZ377ziHENXKZTJcbzeyGQueW",
-   "symbol": "BBN2",
-   "failed_buys_30m": 123,
-   "landed_buys_30m": 0,
-   "landing_rate_pct": 0.0,
-   "fee_burn_sol": 0.001,
-   "uniq_wallets": 6,
-   "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "23DgvKRyexGPKhshahK7XpCxYRycDevsFY9ATB3s6UbP1MZmXYKBYbznHes9fpe8LJgPxAq3hKYYhgohcdP57yb7"
-  },
-  {
-   "mint": "BbQtR9cAq7h4b5gbAZjwJYqDeDWBarWxYCXf9zKdQi27",
-   "symbol": "",
-   "failed_buys_30m": 115,
-   "landed_buys_30m": 0,
-   "landing_rate_pct": 0.0,
-   "fee_burn_sol": 0.002,
-   "uniq_wallets": 8,
-   "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "28PLFndv5p5B4TBhxYyhLnG3oVasis4z2Y1ASJRBeimbjHnA2DmmwRwHhVvia2NM8qKdw3d7ABi9KkVCh9zavJ3r"
-  },
-  {
-   "mint": "37s19ikm1E5YCtD8AvjKwNXAt44vi4bMwXevQMFHpump",
+   "mint": "J5U1C4qAfC7i5BY3Jdb72cEtSdLVWX21PBXwc7n4pump",
    "symbol": "PENIX",
-   "failed_buys_30m": 100,
-   "landed_buys_30m": 1,
-   "landing_rate_pct": 1.0,
-   "fee_burn_sol": 0.001,
-   "uniq_wallets": 7,
-   "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "22kWYvosBCVrjMCoN339LjFBX5Gddkzvcj6k2RugdvEWGbtYYy8D2kbrfq2YVY8aTMXTCGK2vUedL2GhZsiYimwg"
-  },
-  {
-   "mint": "FfGJ92hRUPXXy2AJPK7rReXXCeCfdPsPAN7HiRWS2XkL",
-   "symbol": "",
-   "failed_buys_30m": 99,
-   "landed_buys_30m": 0,
-   "landing_rate_pct": 0.0,
-   "fee_burn_sol": 0.001,
-   "uniq_wallets": 6,
-   "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "29JUJtnYXN7CzcWzSjkEJu7LC5ZyguL8rgcUJhADYTuPphPyFjPWe4mEQD3WMMqPUXF2dihNePX8FX7XGMvnUeEx"
-  },
-  {
-   "mint": "PPE7z8covwzFf3CML6FjS7xJqsCCtu1jCt49oJ1pump",
-   "symbol": "",
-   "failed_buys_30m": 98,
-   "landed_buys_30m": 3,
-   "landing_rate_pct": 3.0,
-   "fee_burn_sol": 0.001,
-   "uniq_wallets": 3,
-   "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "24fx5Df6WCbLaBWRvdurRbyNu68f6VM7th873bRJHfY6v9qZht5iGWqoqTtUgFZ1VU9Erjo55r8vvHK9xnzb8pX8"
-  },
-  {
-   "mint": "FebyGx3aGSXFNmPyzRz5PisHPpsZDf8CssDiNcfRpump",
-   "symbol": "",
-   "failed_buys_30m": 98,
-   "landed_buys_30m": 0,
-   "landing_rate_pct": 0.0,
-   "fee_burn_sol": 0.001,
-   "uniq_wallets": 7,
-   "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "2152n1cqC3zRHKPFwBtznshU9Gvq2NLdrTkFh4PATDUWqCqpecNupAZggvjkSaNxAEZMKZ4Pmcd41AFUQBMurq9J"
-  },
-  {
-   "mint": "HkiV3TPGjYYLQgWPkcqKvMbHaQXWZR1UMShc9UZMpump",
-   "symbol": "",
-   "failed_buys_30m": 97,
-   "landed_buys_30m": 2,
-   "landing_rate_pct": 2.0,
-   "fee_burn_sol": 0.001,
-   "uniq_wallets": 7,
-   "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "22X1UkBbfBkdpzFJYJSFbR3Kk1jDmbZtyJ7DZMpajoejs2jFWZUrqyaoCuwyAYrJ8eddaHhgtVSe8dazgzuj7dU8"
-  },
-  {
-   "mint": "69x19ihcirYDjNZUvG3ouRjiLV99ZudPWsAkLSrspump",
-   "symbol": "",
-   "failed_buys_30m": 97,
-   "landed_buys_30m": 0,
-   "landing_rate_pct": 0.0,
-   "fee_burn_sol": 0.001,
-   "uniq_wallets": 6,
-   "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "29KroQt49oqoDDu3yvoUCSPLGf3rhBRhyx5umPTCvkQgAGpsDCTTC9uFftax5LNDYRbvyQ2S1XrS6gK1Un5D31Cz"
-  },
-  {
-   "mint": "6TpT9FUYNKfCHEVks7XhqmFuK1Ww1XLz1KJbkNYNuT9f",
-   "symbol": "",
-   "failed_buys_30m": 94,
+   "failed_buys_30m": 213,
    "landed_buys_30m": 0,
    "landing_rate_pct": 0.0,
    "fee_burn_sol": 0.002,
-   "uniq_wallets": 5,
-   "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "2XEsFsN7E3fAXtDuL88eCNeAY8aZ2F2AvzBPJ2uvaZNZX4iSGtT2VXEG7eVCjPzRVPZhtsYva4kzFqmoEuJnZRWi"
-  },
-  {
-   "mint": "6uDL3ksEDaWkPx6Myt4u3qYaDYCRVyV9qkahNa4epump",
-   "symbol": "holdercat",
-   "failed_buys_30m": 93,
-   "landed_buys_30m": 0,
-   "landing_rate_pct": 0.0,
-   "fee_burn_sol": 0.001,
-   "uniq_wallets": 5,
-   "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "2EcDDTmujpCnkfX89MtbgPNvjBZL1GyS9eytpAP2oy2Nc8VvbgKXt8yfGzA9b4gH2h7svaBFShSGT3BhWNLLcwr9"
-  },
-  {
-   "mint": "EaDQnqxMsfdoNUELsNAsMLp2xhUkUV9t8u2pWphTZbTE",
-   "symbol": "",
-   "failed_buys_30m": 92,
-   "landed_buys_30m": 0,
-   "landing_rate_pct": 0.0,
-   "fee_burn_sol": 0.0,
-   "uniq_wallets": 3,
-   "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "21uZBP5u1sWPbsYznnvLc2LNW5fj78JrFK1brJ2svZzoHHmYAF9xFNzPtpNP6jcDz2kUobs179QoR9BrLmjwdeEY"
-  },
-  {
-   "mint": "2hTCgQqwD3qAuk219y7qNzXi2oXfbXEFPo53kN1bpump",
-   "symbol": "",
-   "failed_buys_30m": 89,
-   "landed_buys_30m": 0,
-   "landing_rate_pct": 0.0,
-   "fee_burn_sol": 0.001,
    "uniq_wallets": 7,
    "slippage_band": "severe (est. 8\u201315pp)",
-   "proof_sig": "241YMpQBUBLeN23XX7JKYQYA3pYWaSxNGpMRDK7fPchbCwSELczYDXKCyoHstHQWKWN5h5p52YQfAqWFN1cDJ2Er"
+   "proof_sig": "2D4kNvbhy3uvLctWudBAA8148qTTgFN2DBGvDUA2hCrUaAmqVTfMxpfZXwdfQfPTYPdfA3ktau7umq7YDUTUguuj"
+  },
+  {
+   "mint": "6KGVYoNT8R3adiNqMxV8pXifpyZnwZ7tnG9E77AZpump",
+   "symbol": "",
+   "failed_buys_30m": 208,
+   "landed_buys_30m": 5,
+   "landing_rate_pct": 2.3,
+   "fee_burn_sol": 0.002,
+   "uniq_wallets": 5,
+   "slippage_band": "severe (est. 8\u201315pp)",
+   "proof_sig": "2hvnjWREcRy8sbGxyAP7Hs9tdLvZnQagCRENkWWJLkHnEZo9DanY51t5LDZWhey1TBUpRckBZEY7tTUqJEej8647"
+  },
+  {
+   "mint": "Es4N94sirSYG3WJV2V7VztFJTC7z6SLHWtd8TLiwpump",
+   "symbol": "",
+   "failed_buys_30m": 208,
+   "landed_buys_30m": 0,
+   "landing_rate_pct": 0.0,
+   "fee_burn_sol": 0.001,
+   "uniq_wallets": 6,
+   "slippage_band": "severe (est. 8\u201315pp)",
+   "proof_sig": "1erPKmBe2HEYa37E4vvMf99t5Xapv3TNcwZoH6Qm9X58gdsbXZvjeBbEQJ4csiiDzFxFBQAKPR9Pd48WCBtQigg"
+  },
+  {
+   "mint": "HME1kr125R3eCDbQeLMHsxvBu6xdPhuzVyjdZUmvpump",
+   "symbol": "",
+   "failed_buys_30m": 205,
+   "landed_buys_30m": 0,
+   "landing_rate_pct": 0.0,
+   "fee_burn_sol": 0.002,
+   "uniq_wallets": 6,
+   "slippage_band": "severe (est. 8\u201315pp)",
+   "proof_sig": "2AvoJVuiGQtkmjnyNJ1H9o3BT4qXg6fm93vuz2sR5i7i9oyaHqf8LziKXxMahx1SFZufCUgMgEyRBMBeyfvvnrhW"
+  },
+  {
+   "mint": "5jkq3DmnmdUTJEhSsnhYHGPixmyfYcLEC1Bv1f9RNZ4x",
+   "symbol": "",
+   "failed_buys_30m": 204,
+   "landed_buys_30m": 0,
+   "landing_rate_pct": 0.0,
+   "fee_burn_sol": 0.002,
+   "uniq_wallets": 7,
+   "slippage_band": "severe (est. 8\u201315pp)",
+   "proof_sig": "2Gbh5zRVyuQgsqLYcofePn8PkoxzoLQv2jTtvwq4DKEdhP2gpFQdpzz3pXL6P5aURmq4G8joe75E6oqhmhC3EoRW"
+  },
+  {
+   "mint": "FVHZjjKdj8mf5dLFAVaQeeorpmaSaXqpwJBy8Sympump",
+   "symbol": "PP",
+   "failed_buys_30m": 202,
+   "landed_buys_30m": 1,
+   "landing_rate_pct": 0.5,
+   "fee_burn_sol": 0.002,
+   "uniq_wallets": 5,
+   "slippage_band": "severe (est. 8\u201315pp)",
+   "proof_sig": "2ArMv84CytRF2t8kXMTbdNFEG9eYnF9Cc7bTQzZ811GAFw6T43c62HL7CUD5tD9Sm1k8vNFffH8J4r3eFp19Yrv3"
   }
  ]
 }
