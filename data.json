@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-09-09 18:05",
+ "generated_utc": "2026-09-09 18:07",
  "spoof_window_min": 60,
  "contest_window_min": 30,
  "top_spoofed": [
@@ -10,7 +10,7 @@
    "real_buy_sol": 2.89,
    "manufactured_pct": 60.0,
    "spoof_txs": 0,
-   "n_txs": 10,
+   "n_txs": 11,
    "proof_sig": null,
    "proof_apparent_sol": null,
    "proof_real_sol": null
@@ -76,6 +76,18 @@
    "proof_real_sol": 0.797
   },
   {
+   "mint": "CSfJvJq9bZAkQXh1SdvgLVAFY22KVk4cECWTxEE7sXK4",
+   "symbol": "SNOO",
+   "apparent_buy_sol": 7.55,
+   "real_buy_sol": 5.19,
+   "manufactured_pct": 31.2,
+   "spoof_txs": 2,
+   "n_txs": 10,
+   "proof_sig": "2VnL2Qo3uAeXw3KbKqFcovEgJosjzQKPhVGyeUH3xptDQ73Mf1KaFQvff8epR8ZKiweMuSnXoWBPLGg8tNY6zxqS",
+   "proof_apparent_sol": 2.864,
+   "proof_real_sol": 1.383
+  },
+  {
    "mint": "EZ6VkFs81mJaWomS4cHDXW1HAPZtJyJ7hUixYZqQpump",
    "symbol": "",
    "apparent_buy_sol": 9.57,
@@ -130,7 +142,7 @@
    "real_buy_sol": 32.12,
    "manufactured_pct": 17.0,
    "spoof_txs": 6,
-   "n_txs": 55,
+   "n_txs": 56,
    "proof_sig": "ZmTxjwPtW3QD8oQDpY9SS8RpeieNQ4ggsdUNJWeoD25pGWzshJPk3qoncKVjryhBUQsNaMSkh1oFnjzPJSfx9K3",
    "proof_apparent_sol": 4.626,
    "proof_real_sol": 0.0
@@ -202,7 +214,7 @@
    "real_buy_sol": 11.16,
    "manufactured_pct": 11.8,
    "spoof_txs": 2,
-   "n_txs": 19,
+   "n_txs": 20,
    "proof_sig": "268rfTm4hbhvbBaahTtVivZU1kk75vwpeqbtestEfspeknRrTNPLxLbnFxSkvSH1jJwUQe4Ly867pdRYhUeqdror",
    "proof_apparent_sol": 2.434,
    "proof_real_sol": 0.988
@@ -230,18 +242,6 @@
    "proof_sig": "3MpnshwPXo94aE6CG16bXe6zWWFVYqqyFzMZU6szKDmPe9deCBHuhQWwQswC4tkwabJTMe56o1cRwXfmjyWJrkPZ",
    "proof_apparent_sol": 0.237,
    "proof_real_sol": 0.001
-  },
-  {
-   "mint": "ECB1qt44qc2kGJwXXVhkvagFJKK4SMT1YqSeGGfvpump",
-   "symbol": "SSS",
-   "apparent_buy_sol": 15.97,
-   "real_buy_sol": 14.61,
-   "manufactured_pct": 8.5,
-   "spoof_txs": 9,
-   "n_txs": 137,
-   "proof_sig": "2VAYMerokUwTvupFCvzkoJkWRtRMk3JZ713Uz857amfPN6Be4jXpUhqMFcEk6aaPk9SwAWCeJ4bTwBVm99HdpF3C",
-   "proof_apparent_sol": 0.413,
-   "proof_real_sol": 0.0
   }
  ],
  "most_contested": []
